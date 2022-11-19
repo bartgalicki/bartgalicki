@@ -1,6 +1,16 @@
 // global styles importet for all the stories
 import "../styles/globals.css";
 
+// de-optimize Next.js Image only in stories
+import * as NextImage from "next/image";
+
+const OriginalNextImage = NextImage.default;
+
+Object.defineProperty(NextImage, "default", {
+  configurable: true,
+  value: (props) => <OriginalNextImage {...props} unoptimized />
+})
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
