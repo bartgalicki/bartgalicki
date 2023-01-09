@@ -1,0 +1,42 @@
+.button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.button_link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.button_plain {
+    height: 30px;
+    width: 130px;
+    font-size: var(--fontsizenormal);
+    border-radius: var(--borderradiusbig);
+    background-color: var(--lightgray);
+}
+
+.button_plain:hover, .button_plain:active {
+    background-color: var(--white);
+}
+
+@media (min-width: 768px) {
+    .button_plain {
+        height: 35px;
+        width: 145px;
+        font-size: var(--fontsizemedium);
+        background-color: var(--lightgray);
+    }
+}
+
+.button_nav {
+    font-size: var(--fontsizenormal);
+    background: transparent;
+    color: var(--white);
+}
+
+.button_nav:hover, .button_nav:active {
+    color: var(--gray);
+}

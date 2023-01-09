@@ -6,11 +6,19 @@
     --gray: #b3b5bb;
     --lightgray: #c5d9e2;
     --red: #ea5353;
+    --white: #fff;
 
     /* font-size */
     font-size: 17px;
-    --fontsizebig: 2rem;
-    --fontsizemedium: 1.5rem;
-    --fontsizelabel: 1.2rem;
+    --fontsizeverylarge: 2rem;
+    --fontsizelarge: 1.5rem;
+    --fontsizemedium: 1.2rem;
+    --fontsizenormal: 1.1rem;
+    --fontsizelabel: 1rem;
     --fontsizesmall: 0.9rem;
+
+    /* border radius */
+    --borderradiusbig: 15px;
+    --borderradiusmedium: 10px;
+    --borderradiussmall: 5px;
 }
